@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navBar {
+  background: #4b1807;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Exo 2", sans-serif;
+  color: white;
+  font-weight: bolder;
+  align-items: center;
+  height: 7vh;
+}
+
+.navBrand {
+  font-size: 25px;
+}
+
+.navLeft {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  padding: 0px 11px;
+  margin: 8px 0px;
+}
+
+.navItem {
+  list-style: none;
+  margin-left: 16px;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.navBtn {
+  outline: none;
+  border: 1px solid #d1845a;
+  background: transparent;
+  padding: 3px 9px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navBtn:hover {
+  background: #d1845a;
+  border: 1px solid #fff;
+}
+
+.ratingBG{
+  background: #e1e1e1;
+}
+
+.rating{
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  justify-content: center;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  height: auto !important;
+  overflow: hidden;
+}
+
+.goog-te-combo:nth-child(1){
+  display: none;
+}
+
+.translateButton{
+  position: absolute !important;
+  bottom: 10px;
+  border: none;
+  background: transparent;
+}
+
+.skiptranslate .goog-te-gadget:nth-child(2){
+  display: none !important;
+}
+
+.skiptranslate .goog-te-gadget span{
+  display: none !important;
+}
+
+#goog-gt-tt{
+  display: none !important;
+}
+
+@media screen and (max-width: 450px) {
+  .navBar{
+    height: fit-content;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .navLeft{
+    flex-direction: column;
+  }
+
+  .navList{
+    flex-direction: column;
+  }
+
+  .navBrand{
+    font-size: 18px;
+  }
+
+  .navRight{
+    position: absolute;
+    right: 0px;
+  }
+
+  .navItem{
+    font-size: 12px;
+  }
+}
